@@ -13,8 +13,7 @@ function Home() {
                         <img alt="portrait" className="img-fluid mx-auto mb-3 d-block" src={Portrait}></img>
                     </Col>
                     <Col size='sm-9'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum ullam, odio, nihil nobis autem ipsam error sit reiciendis maiores fugiat doloremque repellat ducimus esse officiis? Perspiciatis voluptas voluptatum recusandae?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum ullam, odio, nihil nobis autem ipsam error sit reiciendis maiores fugiat doloremque repellat ducimus esse officiis? Perspiciatis voluptas voluptatum recusandae?</p>
+                        <p>My name is Misha Gringauze and I am a software developer.</p>
                     </Col>
                 </Row>
             </Container>
