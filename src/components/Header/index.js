@@ -1,21 +1,22 @@
 import React from 'react';
 
 function Header(props) {
+    let { page } = props;
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-md navbar-light bg-light">
             <a className="navbar-brand" href="/">Misha Gringauze</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className={"nav-item" + (props.page === "home" ? " active": "")}>
+                    <li className={"nav-item" + (page === "home" ? " active": "")}>
                         <a className="nav-link" href="/">Home</a>
                     </li>
-                    <li className={"nav-item" + (props.page === "portfolio" ? " active": "")}>
+                    <li className={"nav-item" + (page === "portfolio" ? " active": "")}>
                         <a className="nav-link" href="/portfolio">Portfolio</a>
                     </li>
-                    <li className={"nav-item" + (props.page === "contact" ? " active": "")}>
+                    <li className={"nav-item" + (page === "contact" ? " active": "")}>
                         <a className="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
