@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from '../components/Grid';
-import Portrait from '../assets/IMG_0015.jpg';
+import Portrait from '../assets/IMG_0015.webp';
 import './Home.css';
 
 function Home() {
