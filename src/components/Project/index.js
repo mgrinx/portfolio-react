@@ -5,7 +5,7 @@ import './style.css'
 function Project({ children, name, link, github, image }) {
     return (
         <Col size='md-6 xl-4'>
-            <div className="card">
+            <div className="card mb-3 mx-0">
                 <div className="image-wrapper">
                     <img src={image} alt={name} />
                 </div>
