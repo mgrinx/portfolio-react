@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from '../components/Grid';
-import Portrait from '../assets/portrait.png'
+import Portrait from '../assets/portrait.webp';
 
 function Home() {
     return (
@@ -9,7 +9,7 @@ function Home() {
             <Row>
                 <Col size='sm-1' />
                 <Col size='sm-3'>
-                    <img alt="portrait" className="img-fluid mx-auto mb-3 d-block rounded" src={Portrait} />
+                    <img src={Portrait} alt="portrait" className="img-fluid mx-auto mb-3 d-block rounded" />
                 </Col>
                 <Col size='sm-7'>
                     <p>Hi, my name is Misha Gringauze and I am a <Link to="/portfolio">full stack web developer</Link> from Seattle, Washington.</p>

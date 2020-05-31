@@ -3,15 +3,15 @@ import { Container, Row } from '../components/Grid';
 import Project from '../components/Project';
 
 // ------- images ---------
-import LanguageTranslator from '../assets/translator.png';
-import EventPlanner from '../assets/event_planner.png';
-import WeatherDashboard from '../assets/weather.png';
-import WorkDayScheduler from '../assets/scheduler.png';
-import MouseTrainer from '../assets/mouse_trainer.png';
-import CodeQuiz from '../assets/code_quiz.png';
-import OrderUp from '../assets/orderup.png';
-import GoogleBooksSearch from '../assets/book_search.png';
-import FitnessTracker from '../assets/fitness_tracker.png';
+import LanguageTranslator from '../assets/translator.webp';
+import EventPlanner from '../assets/eventplanner.webp';
+import WeatherDashboard from '../assets/weather.webp';
+import WorkDayScheduler from '../assets/scheduler.webp';
+import MouseTrainer from '../assets/mousetrainer.webp';
+import CodeQuiz from '../assets/codequiz.webp';
+import OrderUp from '../assets/orderup.webp';
+import GoogleBooksSearch from '../assets/booksearch.webp';
+import FitnessTracker from '../assets/fitnesstracker.webp';
 
 function Portfolio() {
     return (
