@@ -2,13 +2,13 @@ import React from 'react';
 import './style.css';
 
 export function Container({ fluid, children }) {
-  return <div className={"container" + (fluid ? "-fluid" : "")}>{children}</div>;
+  return <div className={fluid ? "container-fluid" : "container"}>{children}</div>;
 }
 
 export function Row({ children }) {
-  return <div className={"row"}>{children}</div>;
+  return <div className="row">{children}</div>;
 }
 
 export function Col({ size, children }) {
-  return <div className={"col-" + size}>{children}</div>;
+  return <div className={size.split(" ").map(v=>"col-"+v).join(" ")}>{children}</div>;
 }

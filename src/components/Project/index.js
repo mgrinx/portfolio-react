@@ -2,21 +2,18 @@ import React from 'react';
 import { Col } from '../Grid';
 import './style.css'
 
-function Project(props) {
-    let { children, name, link, github, image } = props;
+function Project({ children, name, link, github, image }) {
     return (
-        <Col size='sm-6 col-xl-4'>
-            <div className="card my-3">
-                <img className="card-img-top" src={image} alt={name}></img>
+        <Col size='md-6 xl-4'>
+            <div className="card">
+                <div className="image-wrapper">
+                    <img src={image} alt={name} />
+                </div>
                 <div className="card-body">
-                    <div className="d-flex flex-row align-items-center justify-content-start">
-                        <h5 className="card-title font-weight-normal">{name}</h5>
-                        <a href={link} className="btn btn-sm btn-primary mr-2">Try</a>
-                        <a href={github} className="btn btn-sm btn-secondary">Git</a>
-                    </div>
-                    <p className="card-text text-muted font-weight-light">
-                        {children}
-                    </p>
+                    <h5 className="card-title font-weight-normal">{name}</h5>
+                    <p className="card-text text-muted font-weight-light">{children}</p>
+                    <a href={link} className="btn btn-sm btn-success mr-2">Try it</a>
+                    <a href={github} className="btn btn-sm btn-light">View source</a>
                 </div>
             </div>
         </Col>

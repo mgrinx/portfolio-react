@@ -1,8 +1,8 @@
 import React from 'react';
-// import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/Home';
+import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import './style.scss';
@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <>
+        <Header />
         <Switch>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/portfolio" component={Portfolio} />
