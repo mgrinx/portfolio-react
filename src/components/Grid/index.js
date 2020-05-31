@@ -9,6 +9,6 @@ export function Row({ children }) {
   return <div className="row">{children}</div>;
 }
 
-export function Col({ size, children }) {
-  return <div className={size.split(" ").map(v=>"col-"+v).join(" ")}>{children}</div>;
+export function Col({ size, offset, children }) {
+  return <div className={size.split(" ").map(v=>"col-"+v).join(" ") + (offset ? " " + offset.split(" ").map(v=>"offset-"+v).join(" ") : "")}>{children}</div>;
 }

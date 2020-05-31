@@ -7,8 +7,7 @@ function Home() {
     return (
         <Container>
             <Row>
-                <Col size='sm-1' />
-                <Col size='sm-3'>
+                <Col size='sm-3' offset='sm-1'>
                     <img src={Portrait} alt="portrait" className="img-fluid mx-auto mb-3 d-block rounded" />
                 </Col>
                 <Col size='sm-7'>
