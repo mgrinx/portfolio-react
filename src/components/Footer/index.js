@@ -3,7 +3,11 @@ import './style.css';
 
 function Footer() {
     return (
-        <div id="footer">(c) 2020</div>
+        <div id="footer">
+            (c) 2020
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a href="https://github.com/mgrinx/portfolio-react" rel="noopener noreferrer" target="_blank">github link</a>
+        </div>
     );
 }
 
